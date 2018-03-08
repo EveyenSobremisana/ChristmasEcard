@@ -1,0 +1,577 @@
+#firstpage {
+    background-image: url("svg/page1.svg");
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display:block; 
+}
+#secondpage{
+    background-image: url("svg/page2.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display:none;
+
+}
+#thirdpage{
+    background-image: url("svg/page3.svg");
+    background-position: left;
+    background-size: 150% auto;
+    background-repeat: no-repeat;
+    display:none;
+}
+#fourthpage{
+    background-image: url("svg/page4.svg");
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: none;
+}
+@keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.dim{
+
+    width:1000px;
+    height:700px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+}
+
+/*firstpage*/
+.snows { 
+position: absolute;
+top: -5%;
+}
+#snowman {
+    width:15%;
+    height: 600px;
+    position: absolute;
+    bottom: -130px;
+    left: 170px;
+    pointer-events: none;
+    z-index: 1;
+    cursor:pointer;
+}
+#text{
+    font-family: 'Ultra', serif;
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px #b71d1d;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 50px;
+    animation: textanim 1.5s infinite alternate ease-in-out;
+}
+#smoke {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    right: 170px;
+    top: 135px;
+    animation: smokeanim 2s infinite;
+    animation-timing-function: ease-in-out;
+}
+#name{
+    text-transform: uppercase;
+}
+.name{
+text-align: center;
+width:200px;
+height: 30px;
+position: absolute;
+top: 350px;
+left: 90px;
+padding: 2px;
+color: grey;
+background-color: white; opacity: .9;
+border-radius: 50px;
+}
+#submit {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 355px;
+    left: 300px;
+    color: #59dc89;
+    border: 2px solid #59dc89;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.0);
+    cursor:pointer;
+    
+}
+.bubble {
+    
+    text-align: center;
+    font-size: .9em;
+    width: 90px;
+    height: 30px;
+    padding: 5px;
+    color: gray;
+    position: absolute;
+    top: 400px;
+    left:140px;
+    background-color: white;opacity: .6;
+    border-radius: 50px;
+    display: none;
+
+    
+}
+@keyframes textanim{
+    0%, 100%{
+        opacity: .3;}
+    50%{
+        opacity: 1;}
+    }
+@keyframes jumpsnow {
+    50%{
+        bottom: -124px
+    }
+}
+@keyframes smokeanim {
+    50%
+    {opacity:0.4;}}
+/*secondpage*/
+#cloud1 {
+    width: 15%;
+    height: 100px;
+    position: absolute;
+    left: 80px;
+    top: 180px;
+    animation: cloud1 10s infinite;
+    animation-timing-function: ease-in-out; }
+#cloud2 {
+    width: 15%;
+    height: 100px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+     animation: cloud2 10s infinite;
+    animation-timing-function: ease-in-out;}
+#santa{
+    width: 17%;
+    position: absolute;
+    right:195px;
+    bottom: 307px;
+}
+#santa:hover{
+    animation: santamove 1.5s ease;
+    cursor: pointer;
+}
+#reindeer{
+    width: 20%;
+    position: absolute;
+    left: 130px;
+    bottom: 145px;
+}
+#penguin{
+    width: 10%;
+    position: absolute;
+    left: 300px;
+    bottom: 227px;
+}
+#reindeer:hover{
+    cursor: pointer;
+    animation: reindeermove 1.5s ease;
+}
+#penguin:hover{
+    cursor: pointer;
+    animation: penguinmove 1.5s ease;
+}
+.facts {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 55px;
+    left: 427px;}
+#fact1, #fact2{
+    display: none;
+}
+#star1{ 
+    width: 4%;
+    position: absolute;
+    top: 300px;
+    right: 50px;
+    animation: twinkle 3s ease infinite ;}
+#star2{
+    width: 3%;
+    position: absolute;
+    left:500px;
+    top: 200px;
+    animation: twinkle 3s ease 1s infinite ;}
+#star3{
+    width: 4%;
+    position: absolute;
+    left:300px;
+    animation: twinkle 3s ease 0.5s infinite ;}
+#star4{
+    width: 5%;
+    position: absolute;
+    left: 30px;
+    top: 400px;
+    animation: twinkle 4s ease 2s infinite ;}
+@keyframes reindeer {
+    50% { left: 110px;}
+}
+@keyframes cloud1 {
+    from {left:80px;}
+    to {left:700px;}}
+@keyframes cloud2 {
+    from {right:40px;}
+    to{right: 450px;}}
+@keyframes twinkle{
+        0%,100%{
+            opacity:1;
+        }
+        50%{
+            opacity:0;
+        }
+    }
+@keyframes reindeermove{
+    50%{
+       width: 21%;
+    }
+}
+@keyframes penguinmove{
+    50%{
+        width: 11%
+    }
+}
+@keyframes santamove{
+    50%{
+        width: 18%;
+    }
+}
+
+/*thirdpage*/
+#wreath {
+    width: 15%;
+    position:absolute;
+    top: 150px;
+    right: 256px;}
+#wreath:hover{
+    cursor: pointer;
+    animation: wreathhover 1.5s ease;
+}
+#bluebox{
+    width: 10%;
+    position: absolute;
+    bottom:170px;
+    left:490px;
+     
+}
+#bluebox:hover{
+    cursor: pointer;
+    animation: wobble 2s infinite;
+}
+#redbox{
+    width: 10%;
+    position: absolute;
+    left: 450px;
+    bottom: 165px;
+    
+}
+#closebox{
+    width: 11%;
+    position: absolute;
+    left: 445px;
+    bottom: 203px;
+    display: block;
+    
+}
+#openbox{
+    width: 10%;
+    position: absolute;
+    left: 430px;
+    bottom: 190px;
+    display: none;
+    
+}
+#closebox:hover{
+    cursor: pointer;
+    animation: wobble 2s infinite; 
+}
+#nextpage {
+    width: 8%;
+    position: absolute;
+    bottom: 100px;
+    right: 40px;
+    z-index: 99999999;
+    cursor: pointer;
+}
+#prevpage {
+    width: 8%;
+    position: absolute;
+    bottom: 100px;
+    left:60px;
+    display: none;
+     z-index: 999;
+    cursor: pointer;
+    cursor: pointer;
+}
+#leftimg{
+    width: 5%;
+    position: absolute;
+    bottom: 70px;
+    left: 280px;  
+    cursor: pointer;
+}
+#rightimg{
+    width: 5%;
+    position: absolute;
+    bottom: 70px;
+    left: 350px; 
+    cursor: pointer;
+}
+#dress {
+    width: 330px;
+    height:398px;
+    background-image: url(svg/clothes1.svg);
+    position: absolute;
+    left: 160px;
+    bottom: 100px;
+    background-repeat: no-repeat;
+}
+#sweater {
+    width: 20%;
+    position: absolute;
+    right: 0px;
+    bottom: 130px;
+    z-index: 1;
+    cursor: pointer;
+}
+#swing{
+    width: 20%;
+    position: absolute;
+    right: 0px;
+    top: 290px;
+    animation: swing 2s infinite alternate ease-in-out; 
+}
+#cane {
+    width: 10%;
+    position: absolute;
+    left: 520px;
+    bottom: 120px;    
+}
+#cane:hover{
+    cursor: pointer;
+    animation: canehover 1.5s ease;
+}
+#eggnog{
+    width: 5%;
+    position: absolute;
+    left: 560px;
+    bottom: 305px;
+    
+}
+#eggnog:hover{
+    cursor: pointer;
+    animation: eggnoghover 1.5s ease;
+}
+#mistletoe{
+    width: 12%;
+    position: absolute;
+    left: 440px;
+    top: 100px;
+   
+}
+#mistletoe:hover{
+    cursor: pointer;
+    animation: mistletoehover 1.5s ease;
+}
+#postleft {
+    display: block;
+}
+#posright {
+    display: none;
+}
+#leftframe {
+    width: 144px;
+    height: 400px;
+    position: absolute;
+    left: 57px;
+    top: 130px;
+    background-repeat: no-repeat;
+    background-image: url("svg/leftframe.svg");
+}
+#rightframe {
+    width: 144px;
+    height: 400px;
+    position: absolute;
+    right: 237px;
+    top: 130px;
+    background-repeat: no-repeat;
+    background-image: url("svg/rightframe.svg");
+}
+.btn {
+  background: #ff0303;
+  background-image: linear-gradient(to bottom, #ff0303, #f76c6c);
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+}
+.btn:hover {
+    cursor: pointer;
+  background: #fc3c3c;
+  background-image: linear-gradient(to bottom, #fc3c3c, #ff8c8c);
+  text-decoration: none;
+}
+#hand{
+    width: 10%;
+    position: absolute;
+     left: -32px;
+    bottom: 105px;
+    animation: handwave 1s infinite alternate;
+}
+#henry{
+    width: 18%;
+    position: absolute;
+    left: 40px;
+    bottom:63px;
+    cursor:pointer;
+}
+#popup1{
+    opacity: 0;
+    transition: 1.5s;
+}
+@keyframes wobble {
+  from {
+    transform: none;
+  }
+
+  15% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    transform: translate3d(13%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    transform: translate3d(4%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    transform: translate3d(-4%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    transform: none;
+  }
+}
+@keyframes swing {
+  0% { transform: rotate(-5deg) }
+ 100% { transform: rotate(5deg)}
+}
+@keyframes wreathhover{
+    50%{
+        width: 17%;
+    }
+
+}
+@keyframes canehover{
+    50%{
+        width: 11%;
+    }
+}
+@keyframes eggnoghover{
+    50%{
+        width: 6%;
+    }
+}
+@keyframes mistletoehover{
+    50%{
+        width: 15%;
+    }
+}
+@keyframes handwave{
+
+ 0%{ transform: rotate(1deg)}
+100%{ transform: rotate(-5deg)}
+}
+#elf {
+    width: 5%;
+    position: absolute;
+    left: 480px;
+    bottom: 165px;
+    
+    
+}
+@keyframes elfmove {
+    100%{
+        bottom: 200px;
+    }
+}
+/*fourthpage*/
+
+#leftsock{
+    
+    width: 35%;
+    position: absolute;
+    top: 50px;
+    left: 160px;
+    animation: swingsocks1 1s infinite alternate ease-in-out;
+    z-index: 1;
+    cursor: pointer;
+}
+#rightsock{
+    width: 35%;
+    position: absolute;
+    right: 210px;
+    top:100px;
+    animation: swingsocks 1s infinite alternate ease-in-out;
+    z-index: 1;
+    cursor: pointer;
+    
+}
+#lastdiv {
+    position: absolute;
+    font-family: 'Ultra', serif;
+    font-size: 2.5em;
+    line-height: 1.5;
+    padding: 10px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    color: #FFA400;
+    text-shadow: 3px 4px #7A0000;
+    background-color: white; opacity: 0.9;
+    border: 5px solid red;  
+    outline:5px solid green;
+    opacity: 0;
+    transition: 5s;
+    }
+@keyframes swingsocks {
+  0% { transform: rotate(-20deg) }
+ 100% { transform: rotate(1deg)}
+}
+@keyframes swingsocks1 {
+  0% { transform: rotate(1deg) }
+ 100% { transform: rotate(20deg)}
+    }
+    
