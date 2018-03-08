@@ -34,7 +34,6 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-
 .dim{
 
     width:1000px;
@@ -46,7 +45,6 @@
     left: 0px;
     margin: auto;
 }
-
 /*firstpage*/
 .snows { 
 position: absolute;
@@ -107,7 +105,7 @@ border-radius: 50px;
     border: 2px solid #59dc89;
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.0);
-    cursor:pointer;
+    cursor:wait;
     
 }
 .bubble {
@@ -557,7 +555,7 @@ border-radius: 50px;
     margin: auto;
     text-align: center;
     width: 300px;
-    height: 250px;
+    height: 200px;
     color: #FFA400;
     text-shadow: 3px 4px #7A0000;
     background-color: white; opacity: 0.9;

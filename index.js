@@ -27,9 +27,13 @@ lastpagebutton.addEventListener("click",function(){
     fourthpage.style.animation = "fadein 1.5s";
 });
 
+//bg sound
+var bg = document.getElementById("bgsound");
+bg.play();
+
 
 //First Page//
-
+ 
 //snow//
 var dispDiv = document.getElementById("firstpage");
 function itsSnowing() {
@@ -88,14 +92,13 @@ var submit = document.getElementById("submit"),
     bubble = document.getElementById("bubble"),
     name   = document.getElementById("name");
                                       
-   submit.addEventListener("click",function(){
+    submit.addEventListener("click",function(){
     name   = document.getElementById("name").value.toUpperCase();
     bubble.style.display ="block";
     snowman.style.pointerEvents = "auto";});
 
-//Second Page//
 
-//Javascript//
+//Second Page//
 
 document.getElementById("reindeer").addEventListener("click",function(){
     if(document.getElementById("fact1").style.display = "none") {
@@ -111,7 +114,6 @@ document.getElementById("penguin").addEventListener("click",function(){
     }
     
 });
-
 
 //Third Page//
 var nextpage  = document.getElementById("nextpage"),
@@ -141,8 +143,6 @@ document.getElementById("prevpage").addEventListener("click",function(){
 });
 
 
-
-
 //Dress Up Santa//
 var dressup = document.getElementById("dress");
 var leftframe = document.getElementById("leftframe");
@@ -162,7 +162,7 @@ document.getElementById("leftimg").addEventListener("click",function(){
       } else if ( dressnum == 4){
           leftframe.style.backgroundImage= "url(svg/fact5.svg)";
       }else {
-          leftframe.style.backgroundImage= "url(svg/emptyframe.svg)";
+          leftframe.style.backgroundImage= "url(svg/leftframe.svg)";
       }
      
 });
@@ -180,7 +180,7 @@ document.getElementById("rightimg").addEventListener("click",function(){
       } else if ( dressnum == 4){
           leftframe.style.backgroundImage= "url(svg/fact5.svg)";
       }else {
-          leftframe.style.backgroundImage= "url(svg/emptyframe.svg)";
+          leftframe.style.backgroundImage= "url(svg/leftframe.svg)";
       }
 });
 //henry appear
@@ -198,6 +198,7 @@ document.getElementById("popup1").addEventListener("click",function(){
     document.getElementById("closebox").style.display="none"; document.getElementById("openbox").style.display="block";
    
 })
+
 
 
 $("#wreath").click(function(){
@@ -236,13 +237,9 @@ socks.addEventListener("click",function(){
 
 //audio when hover//
 var sound = document.getElementById("sound");
-
 document.getElementById("secondpage").addEventListener("mouseenter",function(){
      sound.play();  
 });
-
-
-//JQUERYYYY
 
 
 //changing pages with Jquery//
@@ -261,13 +258,11 @@ document.getElementById("secondpage").addEventListener("mouseenter",function(){
 //        $("#fourthpage").fadeIn();
 //    })
 //});
-
-//Jquery Version
+//Playing sound
 //$("#secondpage").hover(function(){
 //    sound.play();   
 //});
-
-//Jquery version
+// Last page swinging socks
 //$("#socks").click(function(){
 //    $("#leftsock").css({left: -50 + "px"})
 //    $("#leftsock").css("animation-play-state", "paused")
@@ -278,7 +273,8 @@ document.getElementById("secondpage").addEventListener("mouseenter",function(){
 //    document.getElementById("lastdiv").innerText = "HAPPY HOLIDAYS " + name;
 //});
 
-//Jquery version
+
+//Third Page
 //$("#sweater").click(function(){
 //    $("#rightframe").css("background-image", "url(svg/fact7.svg)");
 //});
@@ -292,7 +288,9 @@ document.getElementById("secondpage").addEventListener("mouseenter",function(){
 //    $("#rightframe").css("background-image", "url(svg/fact10.svg)");
 //});
 
-//Jquery Version
+
+//Dress Up
+
 //$("#rightimg").click(function(){
 //        dressnum +=1;
 //        
@@ -330,6 +328,8 @@ document.getElementById("secondpage").addEventListener("mouseenter",function(){
 //          leftframe.style.backgroundImage= "url(svg/leftframe.svg)";
 //      }
 //    });
+
+// facts 1 and 2
 //$("#reindeer, #penguin").click(function (event) {
 //   if (this.id == "reindeer") {
 //       $("#fact1").show();
@@ -340,9 +340,6 @@ document.getElementById("secondpage").addEventListener("mouseenter",function(){
 //       $("#fact2").show();
 //   }
 //});
-
-
-
 
 
 
