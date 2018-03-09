@@ -45,6 +45,17 @@
     left: 0px;
     margin: auto;
 }
+p {
+    font-family: 'Ultra', serif;
+    font-size: 1.5em;
+    color: white;
+    position:fixed;
+    z-index: 10;
+    top: 130px;
+    right: 850px;
+    display: none;
+}
+
 /*firstpage*/
 .snows { 
 position: absolute;
@@ -105,7 +116,7 @@ border-radius: 50px;
     border: 2px solid #59dc89;
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.0);
-    cursor:wait;
+    cursor:pointer;
     
 }
 .bubble {
@@ -153,7 +164,7 @@ border-radius: 50px;
     height: 100px;
     position: absolute;
     right: 40px;
-    top: 20px;
+    top: 35px;
      animation: cloud2 10s infinite;
     animation-timing-function: ease-in-out;}
 #santa{
@@ -253,10 +264,10 @@ border-radius: 50px;
 
 /*thirdpage*/
 #wreath {
-    width: 15%;
+    width: 14.5%;
     position:absolute;
-    top: 150px;
-    right: 256px;}
+    top: 108px;
+    right: 154px;}
 #wreath:hover{
     cursor: pointer;
     animation: wreathhover 1.5s ease;
@@ -265,7 +276,7 @@ border-radius: 50px;
     width: 10%;
     position: absolute;
     bottom:170px;
-    left:490px;
+    left:610px;
      
 }
 #bluebox:hover{
@@ -275,14 +286,14 @@ border-radius: 50px;
 #redbox{
     width: 10%;
     position: absolute;
-    left: 450px;
+    left: 560px;
     bottom: 165px;
     
 }
 #closebox{
     width: 11%;
     position: absolute;
-    left: 445px;
+    left: 555px;
     bottom: 203px;
     display: block;
     
@@ -290,7 +301,7 @@ border-radius: 50px;
 #openbox{
     width: 10%;
     position: absolute;
-    left: 430px;
+    left: 540px;
     bottom: 190px;
     display: none;
     
@@ -318,17 +329,17 @@ border-radius: 50px;
     cursor: pointer;
 }
 #leftimg{
-    width: 5%;
+    width: 7%;
     position: absolute;
-    bottom: 70px;
-    left: 280px;  
+    bottom: 65px;
+    left: 360px;  
     cursor: pointer;
 }
 #rightimg{
-    width: 5%;
+    width: 7%;
     position: absolute;
-    bottom: 70px;
-    left: 350px; 
+    bottom: 65px;
+    left: 450px; 
     cursor: pointer;
 }
 #dress {
@@ -336,7 +347,7 @@ border-radius: 50px;
     height:398px;
     background-image: url(svg/clothes1.svg);
     position: absolute;
-    left: 160px;
+    left: 260px;
     bottom: 100px;
     background-repeat: no-repeat;
 }
@@ -397,8 +408,8 @@ border-radius: 50px;
     width: 144px;
     height: 400px;
     position: absolute;
-    left: 57px;
-    top: 130px;
+    left: 68px;
+    top: 170px;
     background-repeat: no-repeat;
     background-image: url("svg/leftframe.svg");
 }
@@ -411,6 +422,14 @@ border-radius: 50px;
     background-repeat: no-repeat;
     background-image: url("svg/rightframe.svg");
 }
+#prevpagebutton{
+    top: 100px;
+    left: 50px;
+}
+#lastpagebutton{
+  right: 50px;
+  top: 100px;
+}
 .btn {
   background: #ff0303;
   background-image: linear-gradient(to bottom, #ff0303, #f76c6c);
@@ -420,9 +439,8 @@ border-radius: 50px;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-    position: absolute;
-    right: 50px;
-    top: 100px;
+  position: absolute;
+  
 }
 .btn:hover {
     cursor: pointer;
@@ -448,6 +466,13 @@ border-radius: 50px;
     opacity: 0;
     transition: 1.5s;
 }
+#elf {
+    width: 5%;
+    position: absolute;
+    left: 590px;
+    bottom: 165px;}
+    
+    
 @keyframes wobble {
   from {
     transform: none;
@@ -483,7 +508,7 @@ border-radius: 50px;
 }
 @keyframes wreathhover{
     50%{
-        width: 17%;
+        width: 15%;
     }
 
 }
@@ -506,14 +531,6 @@ border-radius: 50px;
 
  0%{ transform: rotate(1deg)}
 100%{ transform: rotate(-5deg)}
-}
-#elf {
-    width: 5%;
-    position: absolute;
-    left: 480px;
-    bottom: 165px;
-    
-    
 }
 @keyframes elfmove {
     100%{
@@ -545,9 +562,10 @@ border-radius: 50px;
 #lastdiv {
     position: absolute;
     font-family: 'Ultra', serif;
+    display: inline-block;
     font-size: 2.5em;
     line-height: 1.5;
-    padding: 10px;
+    padding: 5px;
     top: 0;
     bottom: 0;
     right: 0;
@@ -555,15 +573,21 @@ border-radius: 50px;
     margin: auto;
     text-align: center;
     width: 300px;
-    height: 200px;
+    max-height: 250px;
     color: #FFA400;
     text-shadow: 3px 4px #7A0000;
     background-color: white; opacity: 0.9;
     border: 5px solid red;  
     outline:5px solid green;
     opacity: 0;
-    transition: 5s;
+    transition: 4s;
     }
+#reload{
+    bottom: 50px;
+    left: 440px;
+    opacity: 0;
+    transition: 3s;
+}
 @keyframes swingsocks {
   0% { transform: rotate(-20deg) }
  100% { transform: rotate(1deg)}

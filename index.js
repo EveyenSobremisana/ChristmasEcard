@@ -2,6 +2,7 @@
 
 var santa = document.getElementById("santa"),
     snowman = document.getElementById("snowman"),
+    prevpagebutton = document.getElementById("prevpagebutton"),
     lastpagebutton = document.getElementById("lastpagebutton"),
     firstpage = document.getElementById("firstpage"),
     secondpage = document.getElementById("secondpage"),
@@ -19,6 +20,12 @@ santa.addEventListener("click",function(){
     secondpage.style.animation = "fadeout 1.5s";
     thirdpage.style.display = "block";
     thirdpage.style.animation = "fadein 1.5s";
+});
+prevpagebutton.addEventListener("click",function(){
+    thirdpage.style.display ="none";
+    thirdpage.style.animation = "fadeout 1.5s";
+    secondpage.style.display = "block";
+    secondpage.style.animation = "fadein 1.5s";
 });
 lastpagebutton.addEventListener("click",function(){
     thirdpage.style.display ="none";
@@ -201,10 +208,11 @@ document.getElementById("popup1").addEventListener("click",function(){
 
 
 
-$("#wreath").click(function(){
-    $("#leftframe").css("background-image", "url(svg/fact6.svg)");
-});
+
 //Javascript version
+document.getElementById("wreath").addEventListener("click",function(){
+    document.getElementById("leftframe").style.backgroundImage="url(svg/fact6.svg)";
+})
 document.getElementById("sweater").addEventListener("click",function(){
     document.getElementById("rightframe").style.backgroundImage ="url(svg/fact7.svg)";
 });
@@ -223,6 +231,7 @@ var socks = document.getElementById("socks"),
     lastdiv = document.getElementById("lastdiv"),
     leftsock = document.getElementById("leftsock"),
     rightsock = document.getElementById("rightsock");
+var reload = document.getElementById("reload");
 
 
 
@@ -233,6 +242,7 @@ socks.addEventListener("click",function(){
     rightsock.style.animationPlayState= "paused";
     lastdiv.style.opacity = 1;
     lastdiv.innerText = "HAPPY HOLIDAYS " + name;
+    reload.style.opacity ="1";
 });
 
 //audio when hover//
@@ -240,6 +250,12 @@ var sound = document.getElementById("sound");
 document.getElementById("secondpage").addEventListener("mouseenter",function(){
      sound.play();  
 });
+
+
+
+reload.addEventListener("click",function(){
+    location.reload()
+})
 
 
 //changing pages with Jquery//
@@ -287,7 +303,9 @@ document.getElementById("secondpage").addEventListener("mouseenter",function(){
 //$("#mistletoe").click(function(){
 //    $("#rightframe").css("background-image", "url(svg/fact10.svg)");
 //});
-
+//$("#wreath").click(function(){
+//    $("#leftframe").css("background-image", "url(svg/fact6.svg)");
+//});
 
 //Dress Up
 
