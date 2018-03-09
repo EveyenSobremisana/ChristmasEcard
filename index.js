@@ -162,7 +162,7 @@ document.getElementById("leftimg").addEventListener("click",function(){
       } else if ( dressnum == 4){
           leftframe.style.backgroundImage= "url(svg/fact5.svg)";
       }else {
-          leftframe.style.backgroundImage= "url(svg/leftframe.svg)";
+          leftframe.style.backgroundImage= "url(svg/emptyframe.svg)";
       }
      
 });
@@ -180,7 +180,7 @@ document.getElementById("rightimg").addEventListener("click",function(){
       } else if ( dressnum == 4){
           leftframe.style.backgroundImage= "url(svg/fact5.svg)";
       }else {
-          leftframe.style.backgroundImage= "url(svg/leftframe.svg)";
+          leftframe.style.backgroundImage= "url(svg/emptyframe.svg)";
       }
 });
 //henry appear
